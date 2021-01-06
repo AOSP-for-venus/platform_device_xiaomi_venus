@@ -22,6 +22,7 @@ TARGET_OTA_ASSERT_DEVICE := venus
 BOOT_KERNEL_MODULES := \
     fts_touch_spi.ko \
     hwid.ko \
+    msm_drm.ko \
     xiaomi_touch.ko
 
 KERNEL_MODULE_DIR := $(TARGET_KERNEL_DIR)
