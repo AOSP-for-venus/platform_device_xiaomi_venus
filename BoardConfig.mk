@@ -35,3 +35,4 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
 
 # Include proprietary files
 include vendor/xiaomi/venus/BoardConfigVendor.mk
+include vendor/xiaomi/venus-firmware/BoardConfigVendor.mk
