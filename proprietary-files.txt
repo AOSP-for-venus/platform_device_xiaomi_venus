@@ -481,9 +481,9 @@ vendor/etc/init/vendor.xiaomi.hardware.dtool@1.0-service.rc
 vendor/lib64/vendor.xiaomi.hardware.dtool@1.0.so
 
 # NFC configs
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp_RF.conf
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
