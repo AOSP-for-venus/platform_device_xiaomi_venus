@@ -18,21 +18,19 @@ TARGET_SCREEN_DENSITY := 560
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := venus
 
-# Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/venus
-TARGET_KERNEL_CONFIG := vendor/venus-qgki_defconfig
-TARGET_KERNEL_CLANG_VERSION := prelude
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
-KERNEL_SUPPORTS_LLVM_TOOLS := true
-
 # Kernel modules
 BOOT_KERNEL_MODULES := \
     fts_touch_spi.ko \
     hwid.ko \
     xiaomi_touch.ko
 
+KERNEL_MODULE_DIR := $(TARGET_KERNEL_DIR)
+KERNEL_MODULES := $(wildcard $(KERNEL_MODULE_DIR)/*.ko)
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
+BOARD_VENDOR_KERNEL_MODULES := $(KERNEL_MODULES)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(addprefix $(KERNEL_MODULE_DIR)/, $(notdir $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)))
 
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
