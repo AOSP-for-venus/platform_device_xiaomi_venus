@@ -34,6 +34,9 @@ PRODUCT_PACKAGES += \
     SettingsResVenus \
     SystemUIResVenus
 
+# Pixel Launcher
+INCLUDE_PIXEL_LAUNCHER := true
+
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.xiaomi_sm8350
