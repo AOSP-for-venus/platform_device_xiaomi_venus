@@ -47,6 +47,7 @@ PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/venus-kernel/kernel-headers
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
 
 PRODUCT_PACKAGES += \
+    ApertureResVenus \
     FrameworksResVenus \
     NfcResVenus \
     SettingsOverlayM2011K2C \
