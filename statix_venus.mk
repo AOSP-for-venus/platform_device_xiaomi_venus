@@ -23,7 +23,4 @@ PRODUCT_NAME := statix_venus
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys"
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TD1A.221105.001 9104446 release-keys"
+BUILD_FINGERPRINT := Xiaomi/venus_global/venus:12/SKQ1.211006.001/V13.0.5.0.SKBMIXM:user/release-keys
