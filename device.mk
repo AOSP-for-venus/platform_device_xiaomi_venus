@@ -62,3 +62,7 @@ PRODUCT_COPY_FILES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/venus/venus-vendor.mk)
+
+# WiFi
+PRODUCT_PACKAGES += \
+    TargetWifiOverlay
