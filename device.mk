@@ -42,7 +42,7 @@ INCLUDE_PIXEL_LAUNCHER := true
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.xiaomi_sm8350
+    vendor.lineage.powershare@1.0-service.xiaomi
 
 # Sensors
 PRODUCT_COPY_FILES += \
