@@ -40,9 +40,8 @@ PRODUCT_PACKAGES += \
 # Pixel Launcher
 INCLUDE_PIXEL_LAUNCHER := true
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.xiaomi
+# Powershare
+$(call inherit-product, vendor/hardware/xiaomi/aidl/powershare/product.mk)
 
 # Sensors
 PRODUCT_COPY_FILES += \
