@@ -1,0 +1,5 @@
+# All unpinned blobs below are extracted from venus-user 13 RKQ1.211001.001 V14.0.8.0.TKBCNXM release-keys
+
+# Touchscreen firmware
+vendor/firmware/st_fts_k2.ftb:vendor_ramdisk/lib/firmware/st_fts_k2.ftb
+vendor/firmware/st_fts_k2_htp.ftb:vendor_ramdisk/lib/firmware/st_fts_k2_htp.ftb

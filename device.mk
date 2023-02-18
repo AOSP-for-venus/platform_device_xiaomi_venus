@@ -66,16 +66,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi_sm8350
 
-# Touchscreen firmware
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/firmware/st_fts_k2.ftb:$(TARGET_COPY_OUT_VENDOR)/firmware/st_fts_k2.ftb \
-    $(LOCAL_PATH)/firmware/st_fts_k2_htp.ftb:$(TARGET_COPY_OUT_VENDOR)/firmware/st_fts_k2_htp.ftb \
-    $(LOCAL_PATH)/firmware/st_fts_k2.ftb:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/st_fts_k2.ftb \
-    $(LOCAL_PATH)/firmware/st_fts_k2_htp.ftb:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/st_fts_k2_htp.ftb
-
-# Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/venus/venus-vendor.mk)
-
 # WiFi
 PRODUCT_PACKAGES += \
     TargetWifiOverlay
+
+# Call the proprietary setup
+$(call inherit-product, vendor/xiaomi/venus/venus-vendor.mk)
