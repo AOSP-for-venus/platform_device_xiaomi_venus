@@ -28,6 +28,9 @@ PRODUCT_COPY_FILES += \
 # Game Dashboard
 ENABLE_GAMETOOLS := true
 
+# Inherit Google Camera
+$(call inherit-product, vendor/gcam/gcam-vendor.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
 
