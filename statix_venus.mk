@@ -15,6 +15,9 @@ $(call inherit-product, device/xiaomi/venus/device.mk)
 $(call inherit-product, vendor/statix/config/common.mk)
 $(call inherit-product, vendor/statix/config/gsm.mk)
 
+# Inherit Google Camera
+$(call inherit-product, vendor/gcam/gcam-vendor.mk)
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := venus
 PRODUCT_MANUFACTURER := Xiaomi
