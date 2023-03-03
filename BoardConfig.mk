@@ -17,5 +17,8 @@ DEVICE_PATH := device/xiaomi/venus
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 
+# Kernel
+TARGET_KERNEL_CONFIG := vendor/venus_QGKI.config
+
 # Include the proprietary files
 include vendor/xiaomi/venus/BoardConfigVendor.mk
