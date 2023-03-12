@@ -28,6 +28,15 @@ PRODUCT_COPY_FILES += \
 # Game Dashboard
 ENABLE_GAMETOOLS := true
 
+# Kernel
+TARGET_KERNEL_DIR ?= device/xiaomi/venus-kernel
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
+
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/venus-kernel/kernel-headers
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
 
