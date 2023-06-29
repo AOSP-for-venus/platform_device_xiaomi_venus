@@ -39,6 +39,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
 
 PRODUCT_PACKAGES += \
     FrameworksResVenus \
+    NfcResVenus \
     SettingsOverlayM2011K2C \
     SettingsOverlayM2011K2G \
     SettingsProviderOverlayVenus \
