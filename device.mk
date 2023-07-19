@@ -25,9 +25,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display_id_4630946736638489730.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946736638489730.xml
 
-# Game Dashboard
-ENABLE_GAMETOOLS := true
-
 # Kernel
 TARGET_KERNEL_DIR ?= device/xiaomi/venus-kernel
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
@@ -47,9 +44,6 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayVenus \
     SettingsResVenus \
     SystemUIResVenus
-
-# Pixel Launcher
-INCLUDE_PIXEL_LAUNCHER := true
 
 # Powershare
 $(call inherit-product, vendor/hardware/xiaomi/aidl/powershare/product.mk)
