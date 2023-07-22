@@ -33,7 +33,7 @@
     </string-array>
 
     <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Xiaomi/venus_global/venus:13/RKQ1.211001.001/V14.0.1.0.TKBMIXM:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">Xiaomi/venus_global/venus:13/RKQ1.211001.001/V14.0.4.0.TKBMIXM:user/release-keys</string>
 
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
