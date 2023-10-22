@@ -462,9 +462,6 @@
         <item>132</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
-    <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
-    <integer name="config_udfps_illumination_transition_ms">0</integer>
-
     <!-- Not allow to switch to higher refresh rate when display brightness setting is
          equal or less than this value -->
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
