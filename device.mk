@@ -59,6 +59,9 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/hardware/xiaomi/aidl/powershare/product.mk)
 
 # Sensors
+PRODUCT_PACKAGES += \
+    sensors.xiaomi
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
