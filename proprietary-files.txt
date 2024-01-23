@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from venus V14.0.4.0.TKBMIXM
+# All unpinned blobs below are extracted from venus V14.0.7.0.TKBMIXM
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
