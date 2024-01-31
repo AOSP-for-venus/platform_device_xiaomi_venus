@@ -18,6 +18,9 @@ $(call inherit-product, vendor/statix/config/gsm.mk)
 # Game Dashboard
 ENABLE_GAMETOOLS := true
 
+# Carrier Settings
+INCLUDE_CARRIER_SETTINGS := true
+
 # Pixel Launcher
 INCLUDE_PIXEL_LAUNCHER := true
 
