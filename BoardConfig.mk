@@ -18,9 +18,6 @@ TARGET_SCREEN_DENSITY := 560
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/manifest.xml
 
-# Kernel
-TARGET_KERNEL_CONFIG += vendor/venus_QGKI.config
-
 # Kernel modules
 BOOT_KERNEL_MODULES := \
     fts_touch_spi.ko \

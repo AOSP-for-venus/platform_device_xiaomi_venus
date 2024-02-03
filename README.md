@@ -1,5 +1,7 @@
 Copyright (C) 2023 The LineageOS Project
 
+Copyright (C) 2024 Paranoid Android
+
 Device configuration for Xiaomi Mi 11
 =========================================
 
