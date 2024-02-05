@@ -56,8 +56,9 @@ PRODUCT_PACKAGES += \
     SettingsResVenus \
     SystemUIResVenus
 
-# Powershare
-$(call inherit-product, vendor/hardware/xiaomi/aidl/powershare/product.mk)
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.statix.powershare-service
 
 # Sensors
 PRODUCT_PACKAGES += \
