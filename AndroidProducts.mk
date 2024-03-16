@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/statix_venus.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_venus-user \
-    statix_venus-userdebug \
-    statix_venus-eng
+    statix_venus-ap1a-user \
+    statix_venus-ap1a-userdebug \
+    statix_venus-ap1a-eng
