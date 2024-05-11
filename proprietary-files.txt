@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from venus V14.0.7.0.TKBMIXM
+# All unpinned blobs below are extracted from venus V816.0.2.0.UKBMIXM
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -566,6 +566,31 @@ vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
 # Media (VPU firmware)
+vendor/firmware/vpu20_1v.b00
+vendor/firmware/vpu20_1v.b01
+vendor/firmware/vpu20_1v.b02
+vendor/firmware/vpu20_1v.b03
+vendor/firmware/vpu20_1v.b04
+vendor/firmware/vpu20_1v.b05
+vendor/firmware/vpu20_1v.b06
+vendor/firmware/vpu20_1v.b07
+vendor/firmware/vpu20_1v.b08
+vendor/firmware/vpu20_1v.b09
+vendor/firmware/vpu20_1v.b10
+vendor/firmware/vpu20_1v.b11
+vendor/firmware/vpu20_1v.b12
+vendor/firmware/vpu20_1v.b13
+vendor/firmware/vpu20_1v.b14
+vendor/firmware/vpu20_1v.b15
+vendor/firmware/vpu20_1v.b16
+vendor/firmware/vpu20_1v.b17
+vendor/firmware/vpu20_1v.b18
+vendor/firmware/vpu20_1v.b19
+vendor/firmware/vpu20_1v.elf
+vendor/firmware/vpu20_1v.lst
+vendor/firmware/vpu20_1v.mbn
+vendor/firmware/vpu20_1v.mdt
+vendor/firmware/vpu20_1v_unsigned.mbn
 vendor/firmware/vpu20_2v.b00
 vendor/firmware/vpu20_2v.b01
 vendor/firmware/vpu20_2v.b02
@@ -609,6 +634,8 @@ vendor/firmware/vpu20_4v.b16
 vendor/firmware/vpu20_4v.b17
 vendor/firmware/vpu20_4v.b18
 vendor/firmware/vpu20_4v.b19
+vendor/firmware/vpu20_4v.elf
+vendor/firmware/vpu20_4v.lst
 vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
 vendor/firmware/vpu20_4v_unsigned.mbn
