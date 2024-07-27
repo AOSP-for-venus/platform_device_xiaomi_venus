@@ -7,6 +7,9 @@
 # Inherit from sm8350-common
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
+# Inherit from miuicamera-venus
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-venus/device.mk)
+
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
