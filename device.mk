@@ -43,7 +43,8 @@ PRODUCT_PACKAGES += \
     SettingsOverlayM2011K2G \
     SettingsProviderOverlayVenus \
     SettingsResVenus \
-    SystemUIResVenus
+    SystemUIResVenus \
+    WifiResVenus
 
 # Powershare
 $(call inherit-product, vendor/hardware/xiaomi/aidl/powershare/product.mk)
@@ -62,10 +63,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi_sm8350
-
-# WiFi
-PRODUCT_PACKAGES += \
-    TargetWifiOverlay
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/venus/venus-vendor.mk)

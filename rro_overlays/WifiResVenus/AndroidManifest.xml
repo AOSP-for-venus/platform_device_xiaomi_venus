@@ -10,7 +10,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!-- Xiaomi MI 11 specific wifi overlays -->
+<!-- Mi 11 specific wifi overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.wifi.resources.venus"
     android:versionCode="1"

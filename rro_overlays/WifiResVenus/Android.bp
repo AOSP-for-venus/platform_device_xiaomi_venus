@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "TargetWifiOverlay",
-    theme: "TargetWifiOverlay",
+    name: "WifiResVenus",
+    theme: "WifiResVenus",
     sdk_version: "current",
     product_specific: true
 }
