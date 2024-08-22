@@ -45,8 +45,9 @@ PRODUCT_PACKAGES += \
     SystemUIResVenus \
     WifiResVenus
 
-# Powershare
-$(call inherit-product, vendor/hardware/xiaomi/aidl/powershare/product.mk)
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare@1.0-service.default
 
 # Sensors
 PRODUCT_PACKAGES += \
