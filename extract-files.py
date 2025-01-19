@@ -1,0 +1,57 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixup_remove,
+    lib_fixups,
+    lib_fixups_user_type,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+
+namespace_imports = [
+    'hardware/qcom-caf/sm8350',
+    'vendor/hardware/xiaomi',
+    'vendor/qcom/opensource/display',
+    'vendor/xiaomi/sm8350-common',
+]
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+}
+
+blob_fixups: blob_fixups_user_type = {
+    'vendor/etc/camera/pureShot_parameter.xml': blob_fixup()
+        .regex_replace(r'=(\d+)>', r'="\1">'),
+    'vendor/lib64/hw/camera.xiaomi.so': blob_fixup()
+        .sig_replace('AA 06 00 94', '1F 20 03 D5'),
+    'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
+        .sig_replace('8D 0A 00 94', '1F 20 03 D5'),
+    'vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so': blob_fixup()
+        .sig_replace('7C 00 00 94', '1F 20 03 D5'),
+}  # fmt: skip
+
+
+module = ExtractUtilsModule(
+    'venus',
+    'xiaomi',
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+    add_firmware_proprietary_file=True,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device_with_common(
+        module, 'sm8350-common', module.vendor
+    )
+    utils.run()
