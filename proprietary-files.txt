@@ -120,6 +120,12 @@ vendor/lib/libssrec.so
 vendor/lib/vndk/libxlog.so
 
 # Camera
+vendor/lib/libbitmlengine.so
+vendor/lib/libcamera_nn_stub.so
+vendor/lib/libofflinelog.so
+vendor/lib/libopencv.so
+vendor/lib/vendor.xiaomi.hardware.cameraperf@1.0-impl.so
+vendor/lib/vendor.xiaomi.hardware.cameraperf@1.0.so
 vendor/lib64/camera/com.qti.eeprom.venus_semco_s5khmx_m24c128x_wide_eeprom.so
 vendor/lib64/camera/com.qti.eeprom.venus_sunny_ov13b10_gt24p64_ultra_eeprom.so
 vendor/lib64/camera/com.qti.eeprom.venus_sunny_s5k3t2_gt24p64_front_eeprom.so
