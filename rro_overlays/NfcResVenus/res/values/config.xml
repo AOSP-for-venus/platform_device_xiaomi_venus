@@ -16,9 +16,7 @@
 -->
 <resources>
 
-    <!-- List of SKUs where Secure NFC functionality is supported -->
-    <string-array name="config_skuSupportsSecureNfc">
-        <item>venus</item>
-    </string-array>
+    <!-- Set true if Secure NFC functionality supported for all SKUs -->
+    <bool name="enable_secure_nfc_support">true</bool>
 
 </resources>
