@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from venus V816.0.10.0.UKBMIXM
+# All unpinned blobs below are extracted from venus OS2.0.1.0.UKBMIXM
 
 abl.img;AB
 aop.img;AB
