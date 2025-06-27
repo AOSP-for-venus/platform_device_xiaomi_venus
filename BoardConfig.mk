@@ -23,9 +23,16 @@ TARGET_OTA_ASSERT_DEVICE := venus
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
+    adsp_loader_dlkm.ko \
+    apr_dlkm.ko \
     fts_touch_spi.ko \
     hwid.ko \
+    mmhardware_sysfs_dlkm.ko \
     msm_drm.ko \
+    q6_notifier_dlkm.ko \
+    q6_pdr_dlkm.ko \
+    qti_battery_charger_main.ko \
+    snd_event_dlkm.ko \
     xiaomi_touch.ko
 
 KERNEL_MODULE_DIR := $(TARGET_KERNEL_DIR)
