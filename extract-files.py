@@ -31,6 +31,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/pureShot_parameter.xml': blob_fixup()
         .regex_replace(r'=(\d+)>', r'="\1">'),
+    ('vendor/lib/hw/audio.primary.lahaina.so', 'vendor/lib/libaudioroute_ext.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/hw/camera.xiaomi.so': blob_fixup()
         .sig_replace('AA 06 00 94', '1F 20 03 D5'),
     ('vendor/lib64/hw/camera.qcom.so', 'vendor/lib64/hw/com.qti.chi.override.so'): blob_fixup()
