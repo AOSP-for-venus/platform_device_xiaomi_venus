@@ -37,6 +37,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
 PRODUCT_PACKAGES += \
     ApertureResVenus \
     FrameworksResVenus \
+    GoogleWifiResVenus \
     NfcResVenus \
     SettingsOverlayM2011K2C \
     SettingsOverlayM2011K2G \
