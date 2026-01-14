@@ -19,4 +19,14 @@
     <!-- Set true if Secure NFC functionality supported for all SKUs -->
     <bool name="enable_secure_nfc_support">true</bool>
 
+    <!-- NFC Antenna Location API -->
+    <integer name="device_width">74</integer>
+    <integer name="device_height">164</integer>
+    <integer-array name="antenna_x">
+        <item>38</item> <!-- TMP -->
+    </integer-array>
+    <integer-array name="antenna_y">
+        <item>112</item> <!-- TMP -->
+    </integer-array>
+
 </resources>
