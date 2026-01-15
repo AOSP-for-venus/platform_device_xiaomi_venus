@@ -18,12 +18,16 @@
     <screenBrightnessRampSlowIncrease>0.05</screenBrightnessRampSlowIncrease>
     <screenBrightnessMap>
         <point>
-            <value>0.0</value>
-            <nits>2</nits>
+            <value>0.000854701</value>
+            <nits>2.0</nits>
+        </point>
+        <point>
+            <value>0.4998779</value>
+            <nits>500.0</nits>
         </point>
         <point>
             <value>1.0</value>
-            <nits>1000.0</nits>
+            <nits>900.0</nits>
         </point>
     </screenBrightnessMap>
 </displayConfiguration>
