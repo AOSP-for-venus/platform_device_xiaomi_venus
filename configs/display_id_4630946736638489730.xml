@@ -30,4 +30,27 @@
             <nits>900.0</nits>
         </point>
     </screenBrightnessMap>
+
+    <highBrightnessMode enabled="true">
+        <transitionPoint>0.4998779</transitionPoint>
+        <minimumLux>6001</minimumLux>
+        <timing>
+            <timeWindowSecs>0</timeWindowSecs>
+            <timeMaxSecs>0</timeMaxSecs>
+            <timeMinSecs>0</timeMinSecs>
+        </timing>
+        <thermalStatusLimit>critical</thermalStatusLimit>
+        <allowInLowPowerMode>true</allowInLowPowerMode>
+        <minimumHdrPercentOfScreen>0</minimumHdrPercentOfScreen>
+        <sdrHdrRatioMap>
+            <point>
+                <sdrNits>2.0</sdrNits>
+                <hdrRatio>2.25</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>900.0</sdrNits>
+                <hdrRatio>2.25</hdrRatio>
+            </point>
+        </sdrHdrRatioMap>
+    </highBrightnessMode>
 </displayConfiguration>
