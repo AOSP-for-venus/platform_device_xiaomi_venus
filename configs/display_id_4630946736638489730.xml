@@ -53,4 +53,17 @@
             </point>
         </sdrHdrRatioMap>
     </highBrightnessMode>
+
+    <densityMapping>
+        <density>
+            <height>2400</height>
+            <width>1080</width>
+            <density>420</density>
+        </density>
+        <density>
+            <height>3200</height>
+            <width>1440</width>
+            <density>560</density>
+        </density>
+    </densityMapping>
 </displayConfiguration>
