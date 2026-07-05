@@ -663,9 +663,6 @@ vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 
-# Sensors - from ruby V816.0.5.0.UMOMIXM
-vendor/lib64/libnotifyaudiohal.so|8dbb23b6069f81a0420e0d0b59e397c90fbe58e5
-
 # Sensors
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
